@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+html {
+    height: 100vh;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+header img {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;    
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    text-align: center;   
+}
+
+.botoes a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1em 2em;
+    text-decoration: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 10em;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    background-color: #080808;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(192, 192, 192, 0.3);
+}
+
+.botoes a:hover{
+    background-color: #c0c0c0;
+    color: #000000;
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 0px 6px 15px rgba(192, 192, 192, 0.5);   
+}
+
+a.link i{
+    font-size: 1.2em;
+}
+
+button:active{
+    transform: translateY(2px) translateX(1px);
+    box-shadow: #c0c0c0; 
+}
+
+footer{
+    text-align: center; 
+    padding: 10px;
+    margin: 30px;
+}
+
+footer a.btn-footer{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    line-height: 60px;
+    margin: 0 10px;
+    color: #c0c0c0;
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .btn-footer:hover {
+    color: #888;
+    transform: translateY(2px) translateX(1px);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 14px;
+    }
+
+    .botoes a {
+        font-size: 16px;
+        padding: 0.8em 1.5em;
+    }
+
+    footer .btn-footer {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3em;
+        line-height: 50px;
+    }
+}
